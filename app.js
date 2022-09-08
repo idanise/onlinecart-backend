@@ -43,8 +43,8 @@ app.use('/api', productRoutes)
 app.use('/api', braintreeRoutes)
 app.use('/api', orderRoutes)
 
-const PORT = process.env.PORT || 8000
+const port = process.env.PORT || 8000
 
-app.listen(PORT, () => {
-  console.log(`server has started on port ${PORT}`)
+app.listen(port, () => {
+  console.log(`server has started on port ${port}`)
 })
